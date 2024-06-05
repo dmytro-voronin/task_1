@@ -5,23 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3569b6-7d07-4bbb-9c26-e21bc7d65528" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/Accountant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/internship/Programmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/internship/AccountantTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/internship/EmployeeFileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/internship/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/internship/EmployeeFileManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/internship/JsonUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/internship/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/internship/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,10 +45,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IdeaProject/task_1/src/main/java/internship/Main.java&quot;
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/IdeaProject/task_1/src/main/java/internship/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.internship in task_1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="internship.Main" />
       <module name="task_1" />
@@ -58,7 +66,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountantTest.testCalculateTotalSalary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_1" />
       <extension name="coverage">
         <pattern>
@@ -68,16 +76,56 @@
       </extension>
       <option name="PACKAGE_NAME" value="internship" />
       <option name="MAIN_CLASS_NAME" value="internship.AccountantTest" />
-      <option name="METHOD_NAME" value="testCalculateTotalSalary" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeFileManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="internship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="internship" />
+      <option name="MAIN_CLASS_NAME" value="internship.EmployeeFileManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="internship.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="internship" />
+      <option name="MAIN_CLASS_NAME" value="internship.JsonUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="internship in task_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_1" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/internship" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.internship in task_1" />
+        <item itemvalue="JUnit.AccountantTest" />
+        <item itemvalue="JUnit.JsonUtilsTest" />
+        <item itemvalue="JUnit.EmployeeFileManagerTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AccountantTest.testCalculateTotalSalary" />
       </list>
     </recent_temporary>
   </component>
@@ -92,9 +140,24 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/task_1_test1$AccountantTest.ic" NAME="AccountantTest Coverage Results" MODIFIED="1717582820002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>internship.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/task_1$AccountantTest_testCalculateTotalSalary.ic" NAME="AccountantTest.testCalculateTotalSalary Coverage Results" MODIFIED="1716980079062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>internship.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/task_1_test1$internship_in_task_1.ic" NAME="internship in task_1 Coverage Results" MODIFIED="1717582835906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

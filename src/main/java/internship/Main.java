@@ -2,10 +2,11 @@ package internship;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.json.JSONException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JSONException {
         // Создание сотрудников
         Employee programmer1 = new Programmer("John", "Doe", 1);
         programmer1.setSalaryRate(5000);
@@ -41,5 +42,20 @@ public class Main {
                     + employee.getMonthlySalary());
         }
         System.out.println("Total Salary: " + totalSalary);
+
+        // Запись Загрузка сотрудников из JSON
+        EmployeeFileManager employeeFileManager = new EmployeeFileManager("employees.json");
+
+        try {
+            employeeFileManager.saveEmployees(employees);
+
+            List<Employee> loadedEmployees = employeeFileManager.loadEmployees();
+
+            for (Employee emp : loadedEmployees) {
+                System.out.println(emp);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }

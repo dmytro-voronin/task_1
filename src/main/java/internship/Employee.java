@@ -42,7 +42,7 @@ public abstract class Employee {
     }
 
     public double getWorkedTimePercentage() {
-        int normHours = 160; // assuming 20 working days a month
+        int normHours = 160; // предполагается 20 рабочих дней в месяц
         return (double) workedHours / normHours * 100;
     }
 
