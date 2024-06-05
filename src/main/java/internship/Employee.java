@@ -1,11 +1,14 @@
 package internship;
 
-public abstract class Employee {
+public abstract class Employee implements Cloneable {
     private String firstName;
     private String lastName;
     private int id;
     private double salaryRate;
     private int workedHours;
+
+    public Employee() {
+    }
 
     public Employee(String firstName, String lastName, int id) {
         this.firstName = firstName;
@@ -47,6 +50,11 @@ public abstract class Employee {
     }
 
     public abstract double getMonthlySalary();
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
     @Override
     public String toString() {

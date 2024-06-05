@@ -7,6 +7,7 @@ import org.json.JSONException;
 public class Main {
 
     public static void main(String[] args) throws JSONException {
+
         // Создание сотрудников
         Employee programmer1 = new Programmer("John", "Doe", 1);
         programmer1.setSalaryRate(5000);
@@ -57,5 +58,17 @@ public class Main {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        // Создаем объект для клонирования
+        Manager original = new Manager("John", "Doe", 123);
+        original.setSalaryRate(5000.0);
+        original.setWorkedHours(160);
+
+        // Клонируем объект
+        Manager clone = ObjectCloner.cloneObject(original);
+
+        // Проверяем, что клонирование прошло успешно
+        System.out.println("Original: " + original);
+        System.out.println("Clone: " + clone);
     }
 }

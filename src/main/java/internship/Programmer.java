@@ -2,6 +2,9 @@ package internship;
 
 public class Programmer extends Employee {
 
+    public Programmer() {
+    }
+
     public Programmer(String firstName, String lastName, int id) {
         super(firstName, lastName, id);
     }

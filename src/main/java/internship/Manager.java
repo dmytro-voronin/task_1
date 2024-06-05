@@ -2,6 +2,9 @@ package internship;
 
 public class Manager extends Employee {
 
+    public Manager() {
+    }
+
     public Manager(String firstName, String lastName, int id) {
         super(firstName, lastName, id);
     }
